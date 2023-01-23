@@ -16,7 +16,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="host" elementType="Argument">
             <stringProp name="Argument.name">host</stringProp>
-            <stringProp name="Argument.value">${__P(Release.EnvironmentUri,&apos;Release.EnvironmentUri&apos;)}</stringProp>
+            <stringProp name="Argument.value">${__P(System.CollectionUri,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="auth-host" elementType="Argument">
@@ -31,6 +31,13 @@
           </elementProp>
         </collectionProp>
       </Arguments>
+      <hashTree/>
+      <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+        <boolProp name="resetInterpreter">false</boolProp>
+        <stringProp name="parameters"></stringProp>
+        <stringProp name="filename"></stringProp>
+        <stringProp name="script"></stringProp>
+      </BeanShellPreProcessor>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Token" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
